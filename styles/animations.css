@@ -94,3 +94,13 @@
     transform: scale(1);
   }
 } 
+
+@keyframes menu-button-animation {
+  from { 
+    left: -15px; 
+  }
+  
+  to { 
+    left: -19px;
+  }
+}

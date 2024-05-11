@@ -101,14 +101,6 @@
   animation: menu-button-animation 0.5s infinite alternate ease-in-out;
 }
 
-@keyframes menu-button-animation {
-  from { 
-    left: -15px; 
-  }
-  to { 
-    left: -19px;
-  }
-}
 /* -----------------------------------------------MAIN----------------------------------------------- */
 
 .card {
