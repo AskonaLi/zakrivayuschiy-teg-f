@@ -96,11 +96,11 @@
 } 
 
 @keyframes menu-button-animation {
-  from { 
+  from {
     left: -15px; 
   }
   
-  to { 
+  to {
     left: -19px;
   }
 }
