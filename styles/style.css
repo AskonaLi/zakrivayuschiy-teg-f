@@ -152,6 +152,10 @@
     }
 }
 
+.text__card {
+  font-size: 18px;
+}
+
 .filter-img__card {
   background-size: cover;
   width: 100%;
