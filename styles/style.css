@@ -67,15 +67,12 @@
   position: relative;
   transition: color 200ms;
   text-decoration: none;
+  transition: color 0.5s;
 }
 
 .theme-menu__button:hover {
   color: var(--hover-menu-color);
   cursor: pointer;
-}
-
-.theme-menu__button {
-  transition: color 0.5s;
 }
 
 .theme-menu__button::after {
@@ -105,8 +102,12 @@
 }
 
 @keyframes menu-button-animation {
-  from { left: -15px; }
-  to { left: -19px; }
+  from { 
+    left: -15px; 
+  }
+  to { 
+    left: -19px; 
+  }
 }
 /* -----------------------------------------------MAIN----------------------------------------------- */
 
@@ -315,7 +316,7 @@ filter: saturate(358%);
 /* -----------------------------------------------FOOTER----------------------------------------------- */
 
 .save-to-memory {
-  margin-block-start: 50px;
+  margin-block: 50px;
   padding: 15px 20px;
   display: flex;
   flex-direction: column;
