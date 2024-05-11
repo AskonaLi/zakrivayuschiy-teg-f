@@ -4,3 +4,76 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-dark {
+  --head-wght: 785;
+  --text-wght: 465;
+  --accent-color: #00cc14;
+  --background-color: #000;
+  --bgc-gradient: #000;
+  --from-color-gradient: #007f0c;
+  --to-color-gradient: #004306;
+  --label-color: #085610;
+  --label-stroke-color: #000;
+  --hover-menu-color: #007a0c;
+  --color-red: #f00;
+  --blend-text-color: var(--accent-color);
+}
+
+:root.theme-light {
+  --head-wght: 700;
+  --text-wght: 400;
+  --background-color: #fff;
+  --accent-color: #000;
+  --bgc-gradient: #d3d3d3;
+  --from-color-gradient: #e7e7e7;
+  --to-color-gradient: #1a1a1a;
+  --label-color: #000;
+  --label-stroke-color: #d3d3d3;
+  --hover-menu-color: #666666;
+  --color-red: #f00;
+  --blend-text-color: var(--background-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --head-wght: 785;
+    --text-wght: 465;
+    --accent-color: #00cc14;
+    --background-color: #000;
+    --bgc-gradient: #000;
+    --from-color-gradient: #007f0c;
+    --to-color-gradient: #004306;
+    --label-color: #085610;
+    --label-stroke-color: #000;
+    --hover-menu-color: #007a0c;
+    --color-red: #f00;
+    --blend-text-color: var(--accent-color);
+  }
+  /* .page {
+    background-color: var(--background-color);
+    background-image: repeating-linear-gradient(to right, var(--bgc-gradient) 0 2px, transparent 2px 4px), repeating-linear-gradient(to bottom, var(--bgc-gradient) 0 2px, transparent 2px 4px), linear-gradient(var(--from-color-gradient) 0.01%, var(--to-color-gradient));
+  } */
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --head-wght: 700;
+    --text-wght: 400;
+    --background-color: #fff;
+    --accent-color: #000;
+    --bgc-gradient: #d3d3d3;
+    --from-color-gradient: #e7e7e7;
+    --to-color-gradient: #1a1a1a;
+    --label-color: #000;
+    --label-stroke-color: #d3d3d3;
+    --hover-menu-color: #666666;
+    --color-red: #f00;
+    --blend-text-color: var(--background-color);
+  }
+
+  /* .page {
+    background-color: var(--background-color);
+    background-image: repeating-linear-gradient(to right, var(--bgc-gradient) 0 2px, transparent 2px 4px), repeating-linear-gradient(to bottom, var(--bgc-gradient) 0 2px, transparent 2px 4px), linear-gradient(var(--from-color-gradient) 0.01%, var(--to-color-gradient));
+  } */
+}
