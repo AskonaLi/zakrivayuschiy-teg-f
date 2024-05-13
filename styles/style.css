@@ -20,10 +20,10 @@
   font-family: var(--accent-font);
   background-color: var(--background-color);
   background-image: repeating-linear-gradient(to right, var(--bgc-gradient) 0 2px, transparent 2px 4px), repeating-linear-gradient(to bottom, var(--bgc-gradient) 0 2px, transparent 2px 4px), linear-gradient(var(--from-color-gradient) 0.01%, var(--to-color-gradient));
-  background-size: cover;
   color: var(--accent-color);
   font-variation-settings: 'wght' var(--text-wght);
-  /* background-attachment: fixed; */
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /*-----------------------------------------------HEADER----------------------------------------------- */
@@ -74,9 +74,11 @@
   font-size: 14px;
 }
 
-.theme-menu__button:hover {
+.theme-menu__button:hover,
+.theme-menu__button:disabled {
   color: var(--hover-menu-color);
   cursor: pointer;
+  opacity: 0.6;
 }
 
 .theme-menu__button::after {
@@ -102,19 +104,16 @@
   opacity: 0.5;
 }
 
-.theme-menu__button:hover::before {
+.theme-menu__button:hover::before,
+.theme-menu__button:disabled::before {
   content: '▶';
   position: absolute;
   top: 0;
   left: -15px;
   animation: menu-button-animation 0.5s infinite alternate ease-in-out;
+  pointer-events: none;
+  opacity: 0.6;
 }
-
-.theme-menu__button:active {
-  opacity: 0.5;
-}
-
-
 
 /* -----------------------------------------------MAIN----------------------------------------------- */
 
@@ -416,10 +415,6 @@ filter: saturate(358%);
 .submit-text:focus-visible {
   box-shadow: 2px 2px 0 var(--accent-color);
   transition: box-shadow 0.5s;
-}
-
-.submit-text:focus {
-  outline: none;
 }
 
 @media only screen and (width > 375px) {
