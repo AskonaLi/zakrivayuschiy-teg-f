@@ -18,9 +18,9 @@
   </head>
   <body class="page">
     <header class="header">
-      <p class="marking__header">
-        &lt;/HTML&gt;
-      </p>
+      <a class="link__header">
+        <span class="marking__header">&lt;/HTML&gt;</span>
+      </a>
       <h1 class="closing-tag__header">
         закрывающий тег
       </h1>
@@ -50,8 +50,8 @@
       </nav>
     </header>
 
-    <main>
-      <section class="card">
+    <main class="card">
+      <article class="card-item">
         <h2 class="heading__card">
           Фритрек и нулевой спринт: Подготовка к работе
         </h2>
@@ -67,30 +67,25 @@
             Место для ваших воспоминаний о начале обучения.
           </p>
           <div class="likes-group__card">
-            <button class="card__icon-button">
-                <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36">
-                  <g clip-path="url(#a)">
-                    <g class="heart">
-                      <path class="contour" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" fill="none"/>
-                      <path class="main-body" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" fill="none"/>
-                      <path class="core" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" fill="none"/>
-                    </g>
-                    <path class="sparks" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" fill="none"/>
+            <button type="button" class="card__icon-button">
+              <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36">
+                <g clip-path="url(#a)">
+                  <g class="heart">
+                    <path class="contour" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" fill="none"/>
+                    <path class="main-body" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" fill="none"/>
+                    <path class="core" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" fill="none"/>
                   </g>
-                  <defs>
-                    <clipPath>
-                      <path fill="#fff" d="M0 0h39v36H0z"/>
-                    </clipPath>
-                  </defs>
-                </svg>
+                  <path class="sparks" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" fill="none"/>
+                </g>
+              </svg>
             </button>
             <button class="card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </div>
-      </section>
-      <section class="card">
+      </article>
+      <article class="card-item">
         <h2 class="heading__card">
           1 спринт: Я — чистый лист
         </h2>
@@ -106,7 +101,7 @@
             Место для ваших воспоминаний о начале первого спринта.
           </p>
           <div class="likes-group__card">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36">
                 <g clip-path="url(#a)">
                   <g class="heart">
@@ -116,11 +111,6 @@
                   </g>
                   <path class="sparks" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" fill="none"/>
                 </g>
-                <defs>
-                  <clipPath>
-                    <path fill="#fff" d="M0 0h39v36H0z"/>
-                  </clipPath>
-                </defs>
               </svg>
             </button>
             <button class="card__like-button">
@@ -128,8 +118,8 @@
             </button>
           </div>
         </div>
-      </section>
-      <section class="card">
+      </article>
+      <article class="card-item">
         <h2 class="heading__card">
           1 спринт: А если не получится?
         </h2>
@@ -145,7 +135,7 @@
             Место для ваших воспоминаний об окончании первого спринта.
           </p>
           <div class="likes-group__card">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36">
                 <g clip-path="url(#a)">
                   <g class="heart">
@@ -155,11 +145,6 @@
                   </g>
                   <path class="sparks" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" fill="none"/>
                 </g>
-                <defs>
-                  <clipPath>
-                    <path fill="#fff" d="M0 0h39v36H0z"/>
-                  </clipPath>
-                </defs>
               </svg>
             </button>
             <button class="card__like-button">
@@ -167,8 +152,8 @@
             </button>
           </div>
         </div>
-      </section>
-      <section class="card">
+      </article>
+      <article class="card-item">
         <h2 class="heading__card">
           2 спринт: Погоня за идеалом
         </h2>
@@ -184,7 +169,7 @@
             Место для ваших воспоминаний о начале второго спринта.
           </p>
           <div class="likes-group__card">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36">
                 <g clip-path="url(#a)">
                   <g class="heart">
@@ -194,11 +179,6 @@
                   </g>
                   <path class="sparks" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" fill="none"/>
                 </g>
-                <defs>
-                  <clipPath>
-                    <path fill="#fff" d="M0 0h39v36H0z"/>
-                  </clipPath>
-                </defs>
               </svg>
             </button>
             <button class="card__like-button">
@@ -206,8 +186,8 @@
             </button>
           </div>
         </div>
-      </section>
-      <section class="card">
+      </article>
+      <article class="card-item">
         <h2 class="heading__card">
           2 спринт: О тех, кто рядом
         </h2>
@@ -223,7 +203,7 @@
             Место для ваших воспоминаний об окончании второго спринта.
           </p>
           <div class="likes-group__card">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36">
                 <g clip-path="url(#a)">
                   <g class="heart">
@@ -233,11 +213,6 @@
                   </g>
                   <path class="sparks" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" fill="none"/>
                 </g>
-                <defs>
-                  <clipPath>
-                    <path fill="#fff" d="M0 0h39v36H0z"/>
-                  </clipPath>
-                </defs>
               </svg>
             </button>
             <button class="card__like-button">
@@ -245,8 +220,8 @@
             </button>
           </div>
         </div>
-      </section>
-      <section class="card">
+      </article>
+      <article class="card-item">
         <h2 class="heading__card">
           3 спринт: Обходные стратегии
         </h2>
@@ -262,7 +237,7 @@
             Место для ваших воспоминаний о начале третьего спринта.
           </p>
           <div class="likes-group__card">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36">
                 <g clip-path="url(#a)">
                   <g class="heart">
@@ -272,11 +247,6 @@
                   </g>
                   <path class="sparks" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" fill="none"/>
                 </g>
-                <defs>
-                  <clipPath>
-                    <path fill="#fff" d="M0 0h39v36H0z"/>
-                  </clipPath>
-                </defs>
               </svg>
             </button>
             <button class="card__like-button">
@@ -284,8 +254,8 @@
             </button>
           </div>
         </div>
-      </section>
-      <section class="card">
+      </article>
+      <article class="card-item">
         <h2 class="heading__card">
           3 спринт: Когда опускаются руки
         </h2>
@@ -301,7 +271,7 @@
             Место для ваших воспоминаний об окончании третьего спринта.
           </p>
           <div class="likes-group__card">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36">
                 <g clip-path="url(#a)">
                   <g class="heart">
@@ -311,11 +281,6 @@
                   </g>
                   <path class="sparks" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" fill="none"/>
                 </g>
-                <defs>
-                  <clipPath>
-                    <path fill="#fff" d="M0 0h39v36H0z"/>
-                  </clipPath>
-                </defs>
               </svg>
             </button>
             <button class="card__like-button">
@@ -323,8 +288,8 @@
             </button>
           </div>
         </div>
-      </section>
-      <section class="card">
+      </article>
+      <article class="card-item">
         <h2 class="heading__card">
           «Сейчас я здесь»
         </h2>
@@ -340,7 +305,7 @@
             Место, чтобы остановиться, подумать и написать, что вы чувствуете в этой точке пути.
           </p>
           <div class="likes-group__card">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36">
                 <g clip-path="url(#a)">
                   <g class="heart">
@@ -350,11 +315,6 @@
                   </g>
                   <path class="sparks" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" fill="none"/>
                 </g>
-                <defs>
-                  <clipPath>
-                    <path fill="#fff" d="M0 0h39v36H0z"/>
-                  </clipPath>
-                </defs>
               </svg>
             </button>
             <button class="card__like-button">
@@ -362,15 +322,12 @@
             </button>
           </div>
         </div>
-      </section>
-    </main>
-
-    <footer>
-      <button class="save-to-memory" onclick="window['dialog-id'].showModal()" aria-controls="dialog-id">
+      </article>
+      <button type="button" class="save-to-memory" onclick="window['dialog-id'].showModal()" aria-controls="dialog-id">
         <svg viewBox="0 0 29 28" width="29" height="28" class="save-to-memory-card">
           <use href="./svg/floppy.svg#save-to-memory-card" />
         </svg>
-        <span class="text__save-to-memory">
+        <span class="text__save-to-memory button__text">
           Сохранить на память
         </span>
       </button>
@@ -389,12 +346,13 @@
             дискету, чтобы продолжить</p>
         </div>
         <form method="dialog" class="dialog__window-button-form">
-          <button type="submit" class="dialog__window-button okay">
-            <span>ок</span>
+          <button type="submit" class="dialog__window-button submit-text">
+            <span class="button__text">ок</span>
           </button>
         </form>
       </dialog>
-    </footer>
+    </main>
+      
     <script src="./scripts/like.js"></script>
   </body>
 </html>
