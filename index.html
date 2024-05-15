@@ -19,7 +19,7 @@
   <body class="page">
     <header class="header">
       <a class="link__header">
-        <span class="marking__header">&lt;/HTML&gt;</span>
+        &lt;/HTML&gt;
       </a>
       <h1 class="closing-tag__header">
         закрывающий тег
@@ -27,7 +27,10 @@
       <nav class="theme-menu header__theme-menu">
         <ul class="theme-menu__list">
           <li class="theme-menu__item">
-            <button type="button" data-theme="dark" class="theme-menu__button">
+            <button 
+              type="button" 
+              data-theme="dark" 
+              class="theme-menu__button outline-none">
               Темно
             </button>
           </li>
@@ -36,13 +39,16 @@
               type="button"
               data-theme="auto"
               disabled
-              class="theme-menu__button"
+              class="theme-menu__button outline-none"
             >
               Авто
             </button>
           </li>
           <li class="theme-menu__item">
-            <button type="button" data-theme="light" class="theme-menu__button">
+            <button 
+              type="button" 
+              data-theme="light" 
+              class="theme-menu__button outline-none">
               Светло
             </button>
           </li>
@@ -67,7 +73,7 @@
             Место для ваших воспоминаний о начале обучения.
           </p>
           <div class="likes-group__card">
-            <button type="button" class="card__icon-button">
+            <button type="button" class="card__icon-button outline-none">
               <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36">
                 <g clip-path="url(#a)">
                   <g class="heart">
@@ -79,7 +85,7 @@
                 </g>
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button outline-none decorating-button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -113,7 +119,7 @@
                 </g>
               </svg>
             </button>
-            <button class="card__like-button">
+            <button class="card__like-button outline-none decorating-button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -147,7 +153,7 @@
                 </g>
               </svg>
             </button>
-            <button class="card__like-button">
+            <button class="card__like-button outline-none decorating-button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -181,7 +187,7 @@
                 </g>
               </svg>
             </button>
-            <button class="card__like-button">
+            <button class="card__like-button outline-none decorating-button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -215,7 +221,7 @@
                 </g>
               </svg>
             </button>
-            <button class="card__like-button">
+            <button class="card__like-button outline-none decorating-button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -249,7 +255,7 @@
                 </g>
               </svg>
             </button>
-            <button class="card__like-button">
+            <button class="card__like-button outline-none decorating-button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -283,7 +289,7 @@
                 </g>
               </svg>
             </button>
-            <button class="card__like-button">
+            <button class="card__like-button outline-none decorating-button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -317,13 +323,13 @@
                 </g>
               </svg>
             </button>
-            <button class="card__like-button">
+            <button class="card__like-button outline-none decorating-button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </div>
       </article>
-      <button type="button" class="save-to-memory" onclick="window['dialog-id'].showModal()" aria-controls="dialog-id">
+      <button type="button" class="outline-none save-to-memory overflow-hidden decorating-button box-shadow" onclick="window['dialog-id'].showModal()" aria-controls="dialog-id">
         <svg viewBox="0 0 29 28" width="29" height="28" class="save-to-memory-card">
           <use href="./svg/floppy.svg#save-to-memory-card" />
         </svg>
@@ -346,7 +352,7 @@
             дискету, чтобы продолжить</p>
         </div>
         <form method="dialog" class="dialog__window-button-form">
-          <button type="submit" class="dialog__window-button submit-text">
+          <button type="submit" class="dialog__window-button outline-none decorating-button box-shadow">
             <span class="button__text">ок</span>
           </button>
         </form>

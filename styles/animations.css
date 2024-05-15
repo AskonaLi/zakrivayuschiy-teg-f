@@ -22,22 +22,20 @@
 
 .core {
   fill: var(--background-color);
-  transform-origin: center center;
+  transition: fill 0.3s linear;
 }
 
 .contour {
   fill: var(--accent-color);
-  transform-origin: center center;
 }
 
 .main-body {
   fill: var(--background-color);
-  transform-origin: center center;
+  transition: fill 0.3s linear;
 }
 
 .sparks {
   fill: transparent;
-  transform-origin: center center;
 }
 
 .core:active,
@@ -86,11 +84,11 @@
 }
 
 .like-icon.is-liked .heart {
-  animation: scale 0.3s ease-in 0.1s;
+  animation: scale 0.3s ease-in 0.1s alternate;
 }
 
 .like-icon.is-liked .sparks {
-  animation: spark 0.3s ease-in 0.3s;
+  animation: spark 0.3s ease-in 0.3s alternate;
 }
 
 @keyframes spark {
