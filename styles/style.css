@@ -76,6 +76,7 @@
   text-transform: uppercase;
   background-color: transparent;
   border: none;
+  padding: 0;
   position: relative;
   text-decoration: none;
   transition: opacity 0.3s ease;
@@ -84,7 +85,6 @@
 
 .theme-menu__button:hover,
 .theme-menu__button:disabled {
-  color: var(--hover-menu-color);
   cursor: pointer;
   opacity: 0.6;
 }
@@ -96,6 +96,7 @@
   width: 0%;
   height: 2px;
   bottom: 0;
+  left: 0;
   background-color: var(--hover-menu-color);
   transition: width 0.3s;
 }
@@ -110,14 +111,13 @@
 
 .theme-menu__button:focus-visible {
   opacity: 0.6;
-  transition: opacity 0.3s ease;
 }
 
 .theme-menu__button:disabled::before {
   content: "▶";
   position: absolute;
   top: 0;
-  left: -15px;
+  left: -18px;
   animation: menu-button-animation 0.5s infinite alternate ease-in-out;
   pointer-events: none;
   opacity: 0.6;
@@ -126,6 +126,7 @@
 /* -----------------------------------------------MAIN----------------------------------------------- */
 
 .card-item {
+  background-color: var(--background-color);
   border: 2px solid var(--accent-color);
   width: 100%;
   max-width: 700px;
@@ -260,6 +261,7 @@
   z-index: 2;
   border: 2px solid var(--accent-color);
   background-color: var(--background-color);
+  transition: box-shadow 0.3s ease;
 }
 
 .decorating-button::before {
@@ -276,6 +278,10 @@
 
 .decorating-button:hover::before {
   transform: translate(0);
+}
+
+.decorating-button:focus-visible {
+  box-shadow: 2px 2px 0 var(--accent-color);
 }
 
 .text__card + .text__card {
@@ -318,14 +324,6 @@
 .text__save-to-memory {
   font-family: var(--main-font);
   font-size: 14px;
-}
-
-.decorating-button:focus {
-  transition: box-shadow 0.3s ease;
-}
-
-.decorating-button:focus-visible {
-  box-shadow: 2px 2px 0 var(--accent-color);
 }
 
 /* -----------------------------------------------POPOVER----------------------------------------------- */
@@ -402,5 +400,9 @@
 
   .closing-tag__header {
     font-size: 23px;
+  }
+
+  .label__card {
+    right: 25px;
   }
 }
