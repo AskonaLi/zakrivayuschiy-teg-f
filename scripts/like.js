@@ -5,17 +5,13 @@
 ✦ card__icon-button — для кнопки, оборачивающей иконку
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
 ✦ button__text — для обозначения текстового элемента внутри кнопки
-Если эти классы поменять в HTML, скрипт перестанет работать. Будьте аккуратны.
 */
 
 const likeHeartArray = document.querySelectorAll('.like-icon');
 const likeButtonArray = document.querySelectorAll('.card__like-button');
 const iconButtonArray = document.querySelectorAll('.card__icon-button');
 
-console.log('KEK!!');
-
 iconButtonArray.forEach((iconButton, index) => {
-  console.log('KEK');
   iconButton.onclick = () =>
     toggleIsLiked(likeHeartArray[index], likeButtonArray[index]);
 });
